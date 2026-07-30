@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: landis.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 28 13:06:41 2026 GMT
+  hsts: false
+domains:
+- domain: landis.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

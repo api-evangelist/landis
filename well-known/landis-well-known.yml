@@ -1,0 +1,86 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the Landis web and portal hosts
+result: none
+notes: >-
+  No /.well-known/ discovery documents are published. www.landis.com returns a hard
+  404 for every probed path. The two portal hosts (path.landis.com, ally.landis.com)
+  are single-page apps whose catch-all route returns HTTP 200 with the same HTML
+  shell for ANY path — including a control path known not to exist — so their 200s
+  are soft 404s and are recorded as such, not as hits. docs.landis.com 302-redirects
+  to /inactive (a decommissioned docs site).
+hosts:
+- host: https://www.landis.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://path.landis.com
+  spa_catch_all: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not a security.txt document
+  - path: /.well-known/openid-configuration
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not JSON
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not JSON
+  - path: /.well-known/api-catalog
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not JSON
+- host: https://ally.landis.com
+  spa_catch_all: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not a security.txt document
+  - path: /.well-known/openid-configuration
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not JSON
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not JSON
+  - path: /.well-known/api-catalog
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    hit: false
+    reason: SPA catch-all HTML shell, not JSON
+- host: https://docs.landis.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    hit: false
+    reason: redirects to /inactive
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    hit: false
+    reason: redirects to /inactive

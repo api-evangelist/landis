@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+url: https://www.landis.com/data-security-compliance/
+name: Data Security & Compliance
+certifications:
+- SOC 2 Type 2
+program_areas:
+- Security features
+- Infrastructure security
+- Product security
+- Internal security procedures
+- Organizational security
+- Data and privacy
+document_request:
+  method: email
+  contact: security@landis.com
+  note: Compliance documents are provided on request rather than self-serve download.
+notes: >-
+  Landis does not run a hosted trust-center portal (trust.landis.com and
+  security.landis.com do not resolve). Its compliance posture is published on a
+  single first-party page which states "SOC 2 Type 2 Certified" and enumerates the
+  control areas below. No ISO 27001, PCI DSS, HIPAA, or FedRAMP claim was found.
+evidence:
+- source: https://www.landis.com/data-security-compliance/
+  keywords:
+  - SOC 2 Type 2 Certified
+  - infrastructure security
+  - product security
+  - data and privacy

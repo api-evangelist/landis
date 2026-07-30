@@ -1,20 +1,48 @@
 aid: landis
 name: Landis
-description: 'Landis is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Landis Technologies Inc. is a rent-to-own homeownership company that
+  helps renters become homeowners. A client applies for free, Landis underwrites them
+  and issues an approved home budget, the client shops for a home with a real estate
+  agent, and Landis buys that home all cash and rents it back to them while a dedicated
+  Homeownership Coach works a tailored mortgage-readiness plan covering credit score,
+  debt-to-income ratio, and down-payment savings. When the client is mortgage-eligible
+  they buy the home back. Landis operates in 8 states and runs two web portals — Path
+  for clients and Ally for real estate agents — plus referral programs for agents,
+  lenders, and homebuilders. It is SOC 2 Type 2 certified. Landis raised a $165M Series
+  A and a $40M Series B backed by GV, Sequoia, and Jay-Z''s Roc Nation. Landis publishes
+  no public developer API, SDK, or developer portal.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.landis.com/wp-content/uploads/2022/10/cropped-Landis-Favicon-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/landis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - gv
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Real Estate
+- Proptech
+- Fintech
+- Mortgage
+- Rent to Own
+- Homeownership
+- Housing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +51,53 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: landis.com
+  url: https://www.landis.com/
+- type: About
+  url: https://www.landis.com/about/
+- type: Blog
+  url: https://www.landis.com/blog/
+- type: BlogRSS
+  url: https://www.landis.com/feed/
+- type: Pricing
+  url: https://www.landis.com/rent-to-own/pricing/
+- type: SignUp
+  url: https://path.landis.com/apply
+- type: Login
+  url: https://path.landis.com/login
+- type: Portal
+  url: https://ally.landis.com/login
+- type: Support
+  url: https://www.landis.com/contact/
+- type: TermsOfService
+  url: https://www.landis.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.landis.com/privacy-policy/
+- type: Compliance
+  url: https://www.landis.com/data-security-compliance/
+- type: TrustCenter
+  url: security/landis-trust-center.yml
+- type: Security
+  url: https://www.landis.com/data-security-compliance/
+- type: VulnerabilityDisclosure
+  url: security/landis-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/landis-domain-security.yml
+- type: LLMsTxt
+  url: llms/landis-llms.txt
+- type: Careers
+  url: https://www.landis.com/careers/
+- type: Twitter
+  url: https://twitter.com/LandisTeam
+- type: LinkedIn
+  url: https://www.linkedin.com/company/landishq/
+- type: YouTube
+  url: https://www.youtube.com/channel/UC3Dds-Dk3ih2r4RpmbUqjFw/featured
+- type: Facebook
+  url: https://www.facebook.com/LandisHQ
+- type: Instagram
+  url: https://www.instagram.com/LandisTeam/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

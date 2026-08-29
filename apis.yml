@@ -11,6 +11,17 @@ description: 'Landis Technologies Inc. is a rent-to-own homeownership company th
   lenders, and homebuilders. It is SOC 2 Type 2 certified. Landis raised a $165M Series
   A and a $40M Series B backed by GV, Sequoia, and Jay-Z''s Roc Nation. Landis publishes
   no public developer API, SDK, or developer portal.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown

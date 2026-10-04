@@ -47,7 +47,7 @@ modified: '2026-07-19'
 tags:
 - Company
 - Consumer
-- Real-Estate
+- Real Estate
 - PropTech
 - Fintech
 - Mortgage
@@ -64,6 +64,7 @@ tags_raw:
 - Rent to Own
 - Homeownership
 - Housing
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane

@@ -64,22 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Landis Technologies Inc. is a rent-to-own homeownership company that helps renters become homeowners. A client applies for free, Landis underwrites them and issues an approved home budget, the client shops for a home with a real estate agent, and Landis buys that home all cash and rents it back to them while a dedicated Homeownership Coach works a tailored mortgage-readiness plan covering credit score, debt-to-income ratio, and down-payment savings. When the client is mortgage-eligible they buy the home back.
+Landis Technologies Inc. is a rent-to-own homeownership company that helps renters become homeowners. A client applies for free, Landis underwrites them and issues an approved home budget, the client shops for a home with a real estate agent, and Landis buys that home all cash and rents it back to them while a dedicated Homeownership Coach works a tailored mortgage-readiness plan covering credit score, debt-to-income ratio, and down-payment savings. When the client is mortgage-eligible they buy the home back. Landis operates in 8 states and runs two web portals — Path for clients and Ally for real estate agents — plus referral programs for agents, lenders, and homebuilders. It is SOC 2 Type 2 certified. Landis raised a $165M Series A and a $40M Series B backed by GV, Sequoia, and Jay-Z's Roc Nation. Landis publishes no public developer API, SDK, or developer portal.
 
-Landis operates in 8 states and runs two web portals — **Path** for clients (`path.landis.com`) and **Ally** for real estate agents (`ally.landis.com`) — plus referral programs for agents, lenders, and homebuilders.
+**Areas:** Company · Consumer · Real Estate · PropTech · Fintech · Mortgage · Rent-to-Own · Homeownership · Housing
 
-Backed by: GV, Sequoia, Roc Nation — https://www.landis.com/
+## Landis on APIs.io
 
-## API surface
+Everything profiled for Landis is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/landis/](https://apis.io/providers/landis/)** — or go straight to one of the APIs or properties below.
 
-Landis publishes **no public developer API, SDK, developer portal, or API documentation**. `developer.landis.com` and `api.landis.com` do not resolve; `docs.landis.com` redirects to an inactive placeholder. The portals are single-page apps over private backends. This repo therefore carries identity, compliance, and security artifacts only.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | File | Method |
-|---|---|---|
-| llms.txt | `llms/landis-llms.txt` | searched (verbatim, AIOSEO-generated) |
-| Trust center / compliance | `security/landis-trust-center.yml` | searched — SOC 2 Type 2 |
-| Vulnerability disclosure | `security/landis-vulnerability-disclosure.yml` | searched — `security@landis.com` |
-| Domain security | `security/landis-domain-security.yml` | probed |
-| Well-known probe | `well-known/landis-well-known.yml` | searched — no documents published |
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Landis Domain Security](https://apis.io/security/landis/landis-domain-security/)
+- [Landis Trust Center](https://apis.io/security/landis/landis-trust-center/)
+- [Landis Vulnerability Disclosure](https://apis.io/security/landis/landis-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.landis.com/)
+- [Pricing](https://www.landis.com/rent-to-own/pricing/)
+- [Sign up](https://path.landis.com/apply)
+- [Support](https://www.landis.com/contact/)
+- [Blog](https://www.landis.com/blog/)
+- [Security](https://www.landis.com/data-security-compliance/)
+- [Compliance](https://www.landis.com/data-security-compliance/)
+- [Terms of service](https://www.landis.com/terms-of-use/)
+- [Privacy policy](https://www.landis.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 22.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 53.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/landis/](https://apis.io/providers/landis/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Landis: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/landis/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
